@@ -18,7 +18,7 @@ Hearing quality is affected by the sound environment and the capabilities of the
 Overview:
   1) The users wear earbuds and have a smart phone with internet access.
   2) The Cloud is available to provide storage and processing
-  3)The current sound environment is captured by the earbuds and phone and passed up the the Cloud for identification.
+  3) The current sound environment is captured by the earbuds and phone and passed up the the Cloud for identification.
   4) The Identification process identifies and classifies the sound and sound components. 
         (watching TV, in Joe’s Pub, in the weekly company conference, in math class..)
   5) The Cloud process selects a sound target to be enhanced, based on past experiences, which were provided by
