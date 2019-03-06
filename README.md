@@ -38,47 +38,48 @@ Hearing quality is affected by the sound environment and the capabilities of the
 
 ### System Components:
 #### Earbuds:
-Provide the speaker that delivers enhanced sound to the user.\
-Take environmental sounds from onboard microphones, blue tooth mic., bluetooth connection to smart phone, bluetooth transmitter plugged into sound system (like Zvox, or room sound system)\
-Use stored filters and enhancer tools to produced enhanced target sounds.
-Provide the latency dependent execution of toolset.
-Produces enhanced target sounds through processing input sounds using the customized toolset and associated parameters
-Open Standards are provided for all data access, tools and API used on the earbuds
+- Provide the speaker that delivers enhanced sound to the user.
+- Take environmental sounds from onboard microphones, blue tooth mic., bluetooth connection to smart phone, bluetooth transmitter plugged into sound system (like Zvox, or room sound system)
+- Use stored filters and enhancer tools to produced enhanced target sounds.
+- Provide the latency dependent execution of toolset.
+- Produces enhanced target sounds through processing input sounds using the customized toolset and associated parameters
+- Open Standards are provided for all data access, tools and API used on the earbuds
+
 Note: Processing may be done in the Smart Phone in order to avoid having to create earbuds with processing capability. 
 
 #### Smart Phone:
-Provides internet access for communicating with Cloud.
-Transmitting current sound environment up to Cloud
-Receiving new tool sets 
-Receiving parameter sets
-Provides user interface to:
-Give feedback on quality of enhancement
-Provide input on target sounds
-Provides initial testing of user’s hearing capabilities.
-Provides latency tolerant processing needed for enhancement
-Open Standards are provided for tools, data access and APIs used on smart phones
+- Provides internet access for communicating with Cloud.
+- Transmitting current sound environment up to Cloud
+- Receiving new tool sets 
+- Receiving parameter sets
+- Provides user interface to:
+- Give feedback on quality of enhancement
+- Provide input on target sounds
+- Provides initial testing of user’s hearing capabilities.
+- Provides latency tolerant processing needed for enhancement
+- Open Standards are provided for tools, data access and APIs used on smart phones
 #### Cloud Storage:
-Provide storage sound environments accumulated from all users.
-Provide security and privacy for the users’ data and identity.
-Provide tools and parameter sets 
-Keep history of success and failure of enhancement 
-Keep user specific record of capabilities and current state
-This storage is OPEN to all users and providers. 
-The community history is a growing collection of data that can serve as training data for new toolsets and for improving existing strategies.
-Open standards are provided for storage and API for accessing data
+- Provide storage sound environments accumulated from all users.
+- Provide security and privacy for the users’ data and identity.
+- Provide tools and parameter sets 
+- Keep history of success and failure of enhancement 
+- Keep user specific record of capabilities and current state
+- This storage is OPEN to all users and providers. 
+- The community history is a growing collection of data that can serve as training data for new toolsets and for improving existing strategies.
+- Open standards are provided for storage and API for accessing data
 #### Cloud Processing:
-Recognizes current sound environment with emphasis on specific user’s history, but also utilizing community of users history.
-Deconstructs environment into components parts
-Determines target sounds, from user’s history or request as well as community of users history.
-Determines strategy for enhancing target sounds using:
-Current user’s hearing capability
-History of successful enhancement (this user as well as community)
-Toolset available to the user.
-Feedback when provided by the user.
-Simulation of enhancement when history does not provide guidance.
-User experience as well as community experience assists in selection of enhancement strategy.
-Deep Learning techniques are expected to be used in sound separation as well as enhancement strategy assembly.
-Open Standards are provided for tools and tool APIs.
+- Recognizes current sound environment with emphasis on specific user’s history, but also utilizing community of users history.
+- Deconstructs environment into components parts
+- Determines target sounds, from user’s history or request as well as community of users history.
+- Determines strategy for enhancing target sounds using:
+- Current user’s hearing capability
+- History of successful enhancement (this user as well as community)
+- Toolset available to the user.
+- Feedback when provided by the user.
+- Simulation of enhancement when history does not provide guidance.
+- User experience as well as community experience assists in selection of enhancement strategy.
+- Deep Learning techniques are expected to be used in sound separation as well as enhancement strategy assembly.
+- Open Standards are provided for tools and tool APIs.
 
 #### Community of Users:
 By collecting the experiences of a large community of users, each individual user gains. 
@@ -91,6 +92,9 @@ Developers can provide tools and algorithms as open source or perhaps objects av
 
 #### Service Provider:
 The speech enhancement service is provided for a small fee in order to fund the cloud storage and processing. 
+
+#### Security & Privacy:
+Given that users are providing environment information which includes sample sounds, privacy must be maintained. When environments are used to support a user that has not provided the specific environment sample, the providder must be anonymous. However, a user should have access to the environment samples they provide. Some form of encryption must be used regarding identity. 
 
 #### Scenarios:
 ##### Math Class: 
