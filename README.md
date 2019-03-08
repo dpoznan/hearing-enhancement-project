@@ -94,7 +94,7 @@ Developers can provide tools and algorithms as open source or perhaps objects av
 The speech enhancement service is provided for a small fee in order to fund the cloud storage and processing. 
 
 #### Security & Privacy:
-Given that users are providing environment information which includes sample sounds, privacy must be maintained. When environments are used to support a user that has not provided the specific environment sample, the providder must be anonymous. However, a user should have access to the environment samples they provide. Some form of encryption must be used regarding identity. 
+Given that users are providing environment information which includes sample sounds, privacy must be maintained. When environments are used to support a user that has not provided the specific environment sample, the provider must be anonymous. However, a user should have access to the environment samples they provide. Some form of encryption must be used regarding identity. 
 
 #### Scenarios:
 ##### Math Class: 
