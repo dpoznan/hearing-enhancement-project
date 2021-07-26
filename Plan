@@ -1,0 +1,30 @@
+There are two areas of development that must be worked on: 1. The Hearing Aid Device, 2. The Cloud Machine Learning support.
+These two areas will be worked in parallel.
+
+1. Hearing Aid Device
+  - Switch from the openMHA build it yourself RaspberryPi based heading aid to the openMHA hearing aid research platform produced by Bat and Cat Sound Labs 
+    * device was obtained June 28, 2021, approved by NIH and provided free of charge
+  - Install openMHA version 4.16.0 on Mac 
+    * accomplished July 1, 2021
+  - Become fluent in the MatLab version of mhacontrol, so that the device can be used
+  - Configure HARP (hearing aid research platform) to mimic the ReSound hearing aids recently obtained by DSP.
+    * Have obtained the audiogram from Mayo
+    * Have obtained the NAL-NL2 prescription used by Mayo to fit the ReSound hearing aids.
+ 
+  - Determine how settings are changed in response to particular environments.
+    * Coordinate with the Cloud ML activity to be able to associate settings with environments
+    * Devise mechanism to score the setting with the environment.
+    * Devise mechanism to improve setting when it does not meet user's needs for a given environment
+    * Devise mechanism to capture and send to Cloud newly recognised environments.
+ 
+ 2. Cloud Machine Learning support
+  - Obtain Google Research Cloud access for TPU accelerated processing
+    * Have access till end of 2021
+    
+  - Start the process of categorizing environments
+    * Receive environment samples with identifying id
+    * develop training mechanism to identify environments
+    
+  - Communicate with HARP when environment is identified
+  
+  
