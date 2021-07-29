@@ -181,8 +181,15 @@ There is significant activity in both monaural and array separation algorithms. 
 #### IoT Hearing Device
 The prototype IoT device that capture sound input and delivers processed sound is a prototype hearing aid. Constructed from a raspberrypi computer, a Flatmax sound card, Roland binaural microphones/earphones and S/W including openMHA, based of information from website/Wiki by Marc René Schädler. (https://github.com/m-r-s)
 
-#### Cloud Resources
+A newer more effective protype hearing aid is now available (see: http://www.openmha.org/hardware/ ) The Portable Hearing Laboratory (PHL) utilized openMHA software, Beaglebone Black wireless single board computer, Cape4all audio interface and a Linuxlow latency, real time procesing system: Mahalia.
+Additionally, the unit contains a rechargeable battery, and behind the ears hearing aids with two microphones,on each side, and receivers in the canal.
 
+The development and research efforts will be supported by this newer device, until a final design that is smaller and lighter is ultimately designed. The current device is fully programmable and is a powerful research tool.
+
+The project just received a PHL from Bat and Cat corp at no cost through an NIH funding.
+
+#### Cloud Resources
+Currently the project has access to the Google Research Cloud. Google has generously provided free access to the cloud resources for this project.
 
 ## References
 
