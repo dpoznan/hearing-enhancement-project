@@ -1,7 +1,8 @@
+#The Plan
 There are two areas of development that must be worked on: 1. The Hearing Aid Device, 2. The Cloud Machine Learning support.
 These two areas will be worked in parallel.
 
-1. Hearing Aid Device
+##Hearing Aid Device
   - Switch from the openMHA build it yourself RaspberryPi based heading aid to the openMHA hearing aid research platform produced by Bat and Cat Sound Labs 
     * device was obtained June 28, 2021, approved by NIH and provided free of charge
   - Install openMHA version 4.16.0 on Mac 
@@ -17,7 +18,7 @@ These two areas will be worked in parallel.
     * Devise mechanism to improve setting when it does not meet user's needs for a given environment
     * Devise mechanism to capture and send to Cloud newly recognised environments.
  
- 2. Cloud Machine Learning support
+ ##Cloud Machine Learning support
   - Obtain Google Research Cloud access for TPU accelerated processing
     * Have access till end of 2021
     
