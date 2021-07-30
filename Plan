@@ -18,6 +18,10 @@ These two areas will be worked in parallel.
     * Devise mechanism to score the setting with the environment.
     * Devise mechanism to improve setting when it does not meet user's needs for a given environment
     * Devise mechanism to capture and send to Cloud newly recognised environments.
+  - Determine how settings are changed to make the enhanced sounds and voices not only clear, but pleasant to the hearer.
+    * Devise mechanism to quantify "pleasant"
+    * Understand available settings that influence "pleasantness"
+    * Devise mechanism to associate quality of pleasant with different environments
  
  2. Cloud Machine Learning support
   - Obtain Google Research Cloud access for TPU accelerated processing
