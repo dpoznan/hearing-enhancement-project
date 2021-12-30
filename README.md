@@ -14,11 +14,12 @@ Each user has earbuds and a smart phone and a connection to the internet and thu
 
 The problem to be solved: 
 Hearing quality is affected by the sound environment and the capabilities of the listener. A noisy environment can reduce   the quality of hearing as does a reduced capacity (being “hard of hearing”). Every sound environment is different as is every hearing disability. However there are similarities to be taken advantage of, when working to enhance the quality of hearing for individuals with normal or reduced hearing capability. Currently there is no hearing aid nor voice enhancing earbud that has sufficient flexibility, or adaptability to achieve real enhanced speech. 
+Since a significant amount of relevent data is quite personal, such as environments, and people being communicated with, there is a need to maintain user's privacy. Thus the project will utilise federated learning in conjunction with traditional machine learning.
 
 ### Overview:
   1) The users wear earbuds and have a smart phone with internet access.
   2) The Cloud is available to provide storage and processing
-  3) The current sound environment is captured by the earbuds and phone and passed up the the Cloud for identification.
+  3) The current sound environment is captured by the earbuds and phone and utilizes federated learning and the cloud for identification, maintaining the user's privacy.
   4) The Identification process identifies and classifies the sound and sound components. 
         (watching TV, in Joe’s Pub, in the weekly company conference, in math class..)
   5) The Cloud process selects a sound target to be enhanced, based on past experiences, which were provided by
@@ -67,7 +68,7 @@ Note: Processing may be done in the Smart Phone in order to avoid having to crea
 - This storage is OPEN to all users and providers. 
 - The community history is a growing collection of data that can serve as training data for new toolsets and for improving existing strategies.
 - Open standards are provided for storage and API for accessing data
-#### Cloud Processing:
+#### Federated Learning & Cloud Processing:
 - Recognizes current sound environment with emphasis on specific user’s history, but also utilizing community of users history.
 - Deconstructs environment into components parts
 - Determines target sounds, from user’s history or request as well as community of users history.
@@ -94,7 +95,7 @@ Developers can provide tools and algorithms as open source or perhaps objects av
 The speech enhancement service is provided for a small fee in order to fund the cloud storage and processing. 
 
 #### Security & Privacy:
-Given that users are providing environment information which includes sample sounds, privacy must be maintained. When environments are used to support a user that has not provided the specific environment sample, the provider must be anonymous. However, a user should have access to the environment samples they provide. Some form of encryption must be used regarding identity. 
+Given that users are providing environment information which includes sample sounds, privacy must be maintained. When environments are used to support a user that has not provided the specific environment sample, the provider must be anonymous. However, a user should have access to the environment samples they provide. Federated learning keeps the user identifiable information local to the user and make it anonymous in the cloud.
 
 #### Scenarios:
 ##### Math Class: 
@@ -113,7 +114,7 @@ You are at Vescio’s restaurant with a group of friends. It is Saturday night a
 
 ### Introduction
 
-The Crowdsourced Hearing Enhancement project has several technical components: cloud storage and processing, hearing correction, real time user interaction, machine learning, and speech enhancement/speech separation. This paper describes the speech separation work to be done as part of the Crowdsourced Hearing Enhancement Project. The project allows participants to share their experiences in order to improve each others hearing. It provides storage, processing, and interaction support that allows hearing enhancement tied to environments and experiences of the community of users. Hearing enhancement has two key components: 1) correction/amplification and 2) speech separation. Traditional hearing aid technology provides correction of received audio based on an audiogram and assists users who have a hearing impairment. Speech separation provides a user a clearer reception of voices in an environment that may  make understanding speakers difficult.
+The Crowdsourced Hearing Enhancement project has several technical components: federated learning, cloud storage and processing, hearing correction, real time user interaction, machine learning, and speech enhancement/speech separation. This paper describes the speech separation work to be done as part of the Crowdsourced Hearing Enhancement Project. The project allows participants to share their experiences in order to improve each others hearing. It provides storage, processing, and interaction support that allows hearing enhancement tied to environments and experiences of the community of users. Hearing enhancement has two key components: 1) correction/amplification and 2) speech separation. Traditional hearing aid technology provides correction of received audio based on an audiogram and assists users who have a hearing impairment. Speech separation provides a user a clearer reception of voices in an environment that may  make understanding speakers difficult.
 
 Correction is accomplished in the traditional hearing aid style of enhancement of the sound level/volume for frequency ranges for which the hearer has deficiency.
 
