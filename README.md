@@ -38,6 +38,22 @@ Since a significant amount of relevent data is quite personal, such as environme
 
 
 ### System Components:
+#### Federated Learning [7]
+##### In the cloud:
+Pre-train an existing state-of-the-art speech enhancement ML model on existing datasets of noisy voice environments (e.g. SpeechBrain).  This centralized model will be called the global model, and it is the starting point that provides a solid base.
+Reduce the model size (via quantization/etc) and deploy the model to all mobile phones that have installed the app.  These smaller models will be known as the local models because they’ll be local to each mobile phone.  
+
+##### On each mobile phone:
+Do speech enhancement inference using the deployed local model to help with hearing for the user
+Regularly gather environment + speech recordings when the app is running, and store them locally on the phone
+Whenever the phone is plugged in, run a lightweight fine-tune training of the model (on the phone!) using the recently gathered recordings
+Whenever the phone is plugged in and connected to WiFi, send the locally fine-tuned model back to the centralized server.  (i.e. send the model weights/biases, not the raw recordings!)
+##### Back in the cloud:
+Integrate all of the fine-tuned local models back into the global model (this mechanism is built into Federated Learning frameworks)
+Reduce the model size of this new global model, creating a new local model
+Push the new fine-tuned local model back out to all mobile phones
+##### ... repeat often… (daily?)
+
 #### Earbuds:
 - Provide the speaker that delivers enhanced sound to the user.
 - Take environmental sounds from onboard microphones, blue tooth mic., bluetooth connection to smart phone, bluetooth transmitter plugged into sound system (like Zvox, or room sound system)
@@ -205,3 +221,5 @@ Currently the project has access to the Google Research Cloud. Google has genero
 [5]  J. Chen, Y. Wang, and D.L. Wang, "A feature study for classification-based speech separation at low signal-to-noise ratios," IEEE/ACM Trans. Audio Speech Lang. Proc., vol. 22, pp. 1993-2002, 2014.
 
 [6] S. Yao, A. Piiao, W.Jiang, Y. Zhao, H. Shao, S. Liu,D. Liu, J. Li, T. Wang, S.Hu, L.. Su, J. Han, T. Abdelzaher, “STFNets: Learning Sensing Signals from Time-Frequency Perspective with Short-Time Fourier Neural Networks”, WWW’19, May 13-17, 2019.
+
+[7] https://ai.googleblog.com/2017/04/federated-learning-collaborative.html 
